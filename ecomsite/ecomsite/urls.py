@@ -19,5 +19,6 @@ from shop.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='index'),
+    path('', indexView, name='index'),
+    path('<int:id>/', detailView, name='detail'),
 ]
